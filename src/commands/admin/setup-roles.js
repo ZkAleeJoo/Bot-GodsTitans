@@ -42,11 +42,11 @@ module.exports = {
             .setMinValues(0) 
             .setMaxValues(5) 
             .addOptions([
-                { label: 'Actualización', value: '1469730697760735346', description: 'Notificaciones de plugins y versiones.', emoji: '1448307029948108820' },
-                { label: 'Sorteos', value: '1469730755214315655', description: 'Notificaciones de eventos y premios.', emoji: '1448307028022919302' },
-                { label: 'Chat Muerto', value: '1469730781755736146', description: '¡Ayúdanos a revivir el servidor!', emoji: '1448307031873290240' },
-                { label: 'Ofertas', value: '1469730813036859613', description: 'Promociones y descuentos especiales.', emoji: '1448307047409127484' },
-                { label: 'Lista Negra', value: '1469730837892432087', description: 'Información sobre seguridad y prohibiciones.', emoji: '1448307037753835723' }
+                { label: 'Actualización', value: '1469730697760735346', description: 'Notificaciones de plugins y versiones.', emoji: '1458471185011703828' },
+                { label: 'Sorteos', value: '1469730755214315655', description: 'Notificaciones de eventos y premios.', emoji: '1458471036465971425' },
+                { label: 'Chat Muerto', value: '1469730781755736146', description: '¡Ayúdanos a revivir el servidor!', emoji: '1458471182860030108' },
+                { label: 'Ofertas', value: '1469730813036859613', description: 'Promociones y descuentos especiales.', emoji: '1458470822326046824' },
+                { label: 'Lista Negra', value: '1469730837892432087', description: 'Información sobre seguridad y prohibiciones.', emoji: '1458471200828162140' }
             ]);
 
         const row = new ActionRowBuilder().addComponents(selectMenu);
