@@ -10,7 +10,7 @@ module.exports = {
         const ping = client.ws.ping;
 
         console.log(chalk.cyan.bold('\n' + '═'.repeat(40)));
-        console.log(chalk.white.bold('       🚀 GENGAR SYSTEM ONLINE'));
+        console.log(chalk.white.bold('       🚀 SISTEMA GODS TITANS ACTIVO'));
         console.log(chalk.cyan.bold('═'.repeat(40)));
         
         console.log(`${chalk.blue.bold(' 👤 Bot:')}      ${chalk.white(client.user.tag)}`);
@@ -22,9 +22,9 @@ module.exports = {
         console.log(chalk.cyan.bold('═'.repeat(40) + '\n'));
 
         const activities = [
-            { name: `Updating Plugins...`, type: ActivityType.Watching },
-            { name: `${commandsCount} commands available`, type: ActivityType.Listening },
-            { name: 'SpigotMC & Modrinth', type: ActivityType.Playing },
+            { name: `Actualizando el Servidor...`, type: ActivityType.Watching },
+            { name: `${commandsCount} comandos disponibles`, type: ActivityType.Listening },
+            { name: 'play.godstitans.lat', type: ActivityType.Playing },
         ];
 
         let i = 0;

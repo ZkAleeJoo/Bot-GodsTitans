@@ -45,12 +45,12 @@ module.exports = {
         ctx.fillStyle = '#45aaf2'; 
         ctx.font = '20px sans-serif';
         const memberCount = member.guild.memberCount;
-        ctx.fillText(`CONGRATULATIONS, YOU ARE THE #${memberCount} MEMBER`, 250, 180);
+        ctx.fillText(`Eres el miembro #${memberCount} del servidor`, 250, 180);
 
         const attachment = new AttachmentBuilder(canvas.toBuffer(), { name: 'welcome-image.png' });
 
         channel.send({
-            content: `Welcome ${member} to the server | Don't forget to read the <#1448310984132526100> - <#1448316267122655353>`,
+            content: `Bienvenido ${member} al servidor | No olvides leer los canales <#1458456762217660438> - <#1458456802059354145>`,
             files: [attachment]
         });
     },

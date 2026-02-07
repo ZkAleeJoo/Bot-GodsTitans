@@ -8,36 +8,36 @@ module.exports = {
 
     async execute(interaction) {
         const embed = new EmbedBuilder()
-            .setTitle('🎫 Support Center')
+            .setTitle('🎫 Centro de Soporte')
             .setDescription(
-                'Do you need help or want to carry out a procedure?\n\n' +
-                'Select the appropriate category in the menu below to open a ticket. ' +
-                'Our support team will assist you as soon as possible.'
+                '¿Necesitas ayuda o quieres realizar un trámite?\n\n' +
+                'Selecciona la categoría apropiada en el menú a continuación para abrir un ticket. ' +
+                'Nuestro equipo de soporte te asistirá lo antes posible.'
             )
             .addFields(
-                { name: '`\📌 Categories\`', value: 
-                    '• **Support:** General inquiries.\n' +
-                    '• **Bugs:** Error reports.\n' +
-                    '• **Ideas:** Suggestions for the server.\n' +
-                    '• **Partners:** Alliances and collaborations.\n' +
-                    '• **Shopping:** Store-related questions.\n' +
-                    '• **Others:** Other matters.'
+                { name: '`\📌 Categorías\`', value: 
+                    '• **Soporte:** Consultas generales.\n' +
+                    '• **Errores:** Reportes de fallos.\n' +
+                    '• **Reportes:** Sugerencias para el servidor.\n' +
+                    '• **Alianzas:** Alianzas y colaboraciones.\n' +
+                    '• **Compras:** Preguntas relacionadas con la tienda.\n' +
+                    '• **Otros:** Otros asuntos.'
                 }
             )
             .setColor('#5865F2')
             .setImage('https://i.pinimg.com/originals/57/b9/e5/57b9e5526b70cecc4558a284330e0c1d.gif') 
-            .setFooter({ text: 'Automatic Ticket System', iconURL: interaction.client.user.displayAvatarURL() });
+            .setFooter({ text: 'Sistema Automático de Tickets', iconURL: interaction.client.user.displayAvatarURL() });
 
         const menu = new StringSelectMenuBuilder()
             .setCustomId('ticket_select')
-            .setPlaceholder('Select the reason for your inquiry...')
+            .setPlaceholder('Selecciona el motivo de tu consulta...')
             .addOptions([
-                { label: 'Support', value: 'support', emoji: '🛠️', description: 'General help' },
-                { label: 'Bugs', value: 'bugs', emoji: '🐛', description: 'Report an error' },
-                { label: 'Ideas', value: 'ideas', emoji: '💡', description: 'Submit a suggestion' },
-                { label: 'Partners', value: 'partners', emoji: '🤝', description: 'Alliance management' },
-                { label: 'Shopping', value: 'shopping', emoji: '🛒', description: 'Store-related questions' },
-                { label: 'Others', value: 'others', emoji: '📂', description: 'Other matters' },
+                { label: 'Soporte', value: 'support', emoji: '🛠️', description: 'Ayuda general' },
+                { label: 'Errores', value: 'bugs', emoji: '🐛', description: 'Reportar un error' },
+                { label: 'Reportes', value: 'reportes', emoji: '🔍', description: 'Enviar una sugerencia' },
+                { label: 'Alianzas', value: 'partners', emoji: '🤝', description: 'Gestión de alianzas' },
+                { label: 'Compras', value: 'shopping', emoji: '🛒', description: 'Preguntas sobre la tienda' },
+                { label: 'Otros', value: 'others', emoji: '📂', description: 'Otros asuntos' },
             ]);
 
         const row = new ActionRowBuilder().addComponents(menu);
