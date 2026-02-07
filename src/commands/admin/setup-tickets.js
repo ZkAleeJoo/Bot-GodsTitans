@@ -18,7 +18,7 @@ module.exports = {
                 { name: '`\📌 Categorías\`', value: 
                     '• **Soporte:** Consultas generales.\n' +
                     '• **Errores:** Reportes de fallos.\n' +
-                    '• **Reportes:** Sugerencias para el servidor.\n' +
+                    '• **Reportes:** Reportes a usuarios.\n' +
                     '• **Alianzas:** Alianzas y colaboraciones.\n' +
                     '• **Compras:** Preguntas relacionadas con la tienda.\n' +
                     '• **Otros:** Otros asuntos.'
