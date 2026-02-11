@@ -1,0 +1,21 @@
+{
+  "enabled": true,
+  "xp": {
+    "minPerMessage": 15,
+    "maxPerMessage": 25,
+    "cooldownSeconds": 45,
+    "minMessageLength": 5
+  },
+  "levelFormula": {
+    "baseXp": 100,
+    "growthFactor": 1.35
+  },
+  "ignoredChannelIds": [],
+  "ignoredRoleIds": [],
+  "announcement": {
+    "enabled": true,
+    "channelId": null,
+    "messageTemplate": "🎉 {user} subió a **nivel {level}** y recibió **{rewardCount}** recompensa(s)."
+  },
+  "roleRewards": []
+}
