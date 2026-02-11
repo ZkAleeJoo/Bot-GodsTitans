@@ -3,7 +3,12 @@
     "announcement": {
       "channelId": "1471163788475764736"
     },
-    "xp": {},
+    "xp": {
+      "minPerMessage": 20,
+      "maxPerMessage": 30,
+      "cooldownSeconds": 30,
+      "minMessageLength": 5
+    },
     "levelFormula": {},
     "roleRewards": [
       {
