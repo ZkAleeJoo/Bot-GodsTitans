@@ -27,8 +27,6 @@ module.exports = {
                 { name: 'XP siguiente nivel', value: `\`${xpNext}\``, inline: true },
                 { name: 'XP total', value: `\`${stats.totalXp}\`` },
             )
-            .setFooter({ text: 'Sistema de niveles profesional' })
-            .setTimestamp();
 
         await interaction.reply({ embeds: [embed] });
     },
